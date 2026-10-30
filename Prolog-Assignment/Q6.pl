@@ -1,7 +1,12 @@
+% Practical 6: Implement Breadth-First Search (BFS) to find the shortest path in a graph.
+
 % Undirected sample graph
-edge(a, b).  edge(a, c).
-edge(b, d).  edge(b, e).
-edge(c, f).  edge(e, g).
+edge(a, b).
+edge(a, c).
+edge(b, d).
+edge(b, e).
+edge(c, f).
+edge(e, g).
 edge(f, g).
 
 connected(X, Y) :- edge(X, Y).

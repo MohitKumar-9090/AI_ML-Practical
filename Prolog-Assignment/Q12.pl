@@ -1,3 +1,5 @@
+% Practical 12: Solve the N-Queens problem using backtracking to satisfy CSP constraints.
+
 :- use_module(library(lists)).
 
 % queens(N, Rows) returns one safe row position for each column 1..N.

@@ -1,3 +1,5 @@
+% Practical 5: Classify students as topper, average, and fail using rule-based reasoning.
+
 % student(Name, Marks).
 student(mohit, 92).
 student(ananya, 78).
@@ -17,9 +19,12 @@ fail(Student) :-
     student(Student, Marks),
     Marks < 40.
 
-classification(Student, topper) :- topper(Student).
-classification(Student, average) :- average(Student).
-classification(Student, fail) :- fail(Student).
+classification(Student, topper) :-
+    topper(Student).
+classification(Student, average) :-
+    average(Student).
+classification(Student, fail) :-
+    fail(Student).
 
 % ?- classification(mohit, Category).
 % ?- topper(Student).

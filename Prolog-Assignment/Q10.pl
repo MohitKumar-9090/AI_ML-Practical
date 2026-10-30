@@ -1,3 +1,5 @@
+% Practical 10: Solve an optimization problem using Simulated Annealing to escape local optima.
+
 :- use_module(library(random)).
 
 % Two peaks: X=3 is a local optimum; X=17 is the global optimum.
@@ -11,10 +13,11 @@ neighbor(X, Next) :-
     ( X =:= 0 -> Next = 1
     ; X =:= 20 -> Next = 19
     ; random_between(0, 1, Direction),
-      (Direction =:= 0 -> Next is X - 1 ; Next is X + 1)
+      ( Direction =:= 0 -> Next is X - 1 ; Next is X + 1 )
     ).
 
-accept(Delta, _) :- Delta >= 0.
+accept(Delta, _) :-
+    Delta >= 0.
 accept(Delta, Temperature) :-
     Delta < 0,
     Probability is exp(Delta / Temperature),

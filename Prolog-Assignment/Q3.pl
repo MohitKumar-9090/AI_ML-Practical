@@ -1,3 +1,5 @@
+% Practical 3: Perform append, reverse, member search, and list length operations.
+
 % Append two lists
 my_append([], List, List).
 my_append([Head | Tail], List, [Head | Result]) :-
@@ -22,5 +24,5 @@ list_length([_ | Tail], Length) :-
     list_length(Tail, TailLength),
     Length is TailLength + 1.
 
-% ?- my_append([1,2], [3,4], X), my_reverse(X, R).
-% ?- member_of(3, [1,2,3]), list_length([a,b,c], N).
+% ?- my_append([1, 2], [3, 4], X), my_reverse(X, R).
+% ?- member_of(3, [1, 2, 3]), list_length([a, b, c], N).

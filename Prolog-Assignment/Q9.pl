@@ -1,3 +1,5 @@
+% Practical 9: Implement Hill Climbing for optimization problems.
+
 % Maximize f(X) = 49 - (X - 7)^2 over integer values 0..20.
 objective(X, Score) :-
     Score is 49 - (X - 7) * (X - 7).

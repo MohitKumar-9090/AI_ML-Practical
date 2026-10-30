@@ -1,4 +1,5 @@
-% Student-Course Knowledge Base
+% Practical 1: Create a simple Knowledge Base using facts, predicates, clauses, and goals (Student-Course Database).
+
 student(mohit).
 student(ananya).
 student(rahul).

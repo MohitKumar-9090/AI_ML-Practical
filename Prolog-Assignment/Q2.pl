@@ -1,9 +1,18 @@
+% Practical 2: Implement arithmetic operations, Factorial, and Fibonacci Series using recursion.
+
 % Arithmetic operations
-add(A, B, Result) :- Result is A + B.
-subtract(A, B, Result) :- Result is A - B.
-multiply(A, B, Result) :- Result is A * B.
+add(A, B, Result) :-
+    Result is A + B.
+
+subtract(A, B, Result) :-
+    Result is A - B.
+
+multiply(A, B, Result) :-
+    Result is A * B.
+
 divide(_, 0, _) :-
-    write('Division by zero is not allowed'), fail.
+    write('Division by zero is not allowed'),
+    fail.
 divide(A, B, Result) :-
     B =\= 0,
     Result is A / B.
